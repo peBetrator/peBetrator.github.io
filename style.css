@@ -1,7 +1,6 @@
-html {
+html{
     background-image: url(img/bg.jpg);
 }
-
 h1 {
     color: #dfdfdf;
     text-align: center;
@@ -9,8 +8,7 @@ h1 {
     font-size: 50px;
     font-weight: 400;
 }
-
-.header {
+.header{
     border-radius: 29.5px;
     height: 60px;
     background-color: #dfdfdf;
@@ -26,52 +24,50 @@ h1 {
     color: #969696;
     font-family: roboto;
     font-size: 12px;
-    font-weight: 200;
+    font-weight: 200; 
     text-align: center;
     padding-top: 40px;
     box-sizing: border-box;
 }
-
-.mainlink {
+.mainlink{
     text-decoration: none;
     font-family: roboto;
     position: relative;
-    top: 7px;
+    top: 20px;
     right: 60px;
     font-weight: bold;
     color: black;
 }
-
-.gallerylink {
+.gallerylink{
     text-decoration: none;
     font-family: roboto;
     position: relative;
-    top: 7px;
+    top: 20px;
     right: 30px;
     font-weight: bold;
     color: black;
-
+    
 }
-
-.testlink {
+.testlink{ 
     text-decoration: none;
+    font-family: roboto;
     position: relative;
-    top: 16px;
+    top: 20px;
+    font-weight: bold;
+    color: black;
 }
-
-.content {
-    height: 800px;
+.content{
+height: 900px;
 }
-
-.text {
+.text{
     color: azure;
     font-family: roboto;
     font-size: 20px;
-    font-weight: 900;
-    text-align:right;
+    font-weight: 700;
+    text-align: right;
     position: relative;
     top: 250px;
-    right: 60px;
+    right: 50px;
     line-height: 1.5;
     word-spacing: 1.2px;
 }
