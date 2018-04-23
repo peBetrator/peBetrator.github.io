@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> lit</title>
+    <title>( ͡° ͜ʖ ͡°) ▪ lit</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="./css/bootstrap.css" rel="stylesheet">
@@ -13,7 +13,101 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./favicon.ico">
     <link rel="stylesheet" href="./css/animate.css">
+    <style>
+        .view {
+            background-size: cover;
+            background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+            background-size: 400% 400%;
+            -webkit-animation: Gradient 9s ease infinite;
+            -moz-animation: Gradient 9s ease infinite;
+            animation: Gradient 9s ease infinite;
+        }
 
+        @-webkit-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @-moz-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        }
+
+        @media (min-width: 768px) {
+            .view {
+                overflow: visible;
+                margin-top: -50px;
+                margin-bottom: -50px;
+            }
+        }
+
+
+        .ipad {
+            background-image: url("./img/ipad-site.jpg");
+            min-height: 700px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .imac {
+            background-image: url("./img/imac-site.jpg");
+            min-height: 600px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .iphone {
+            background-image: url("./img/imoc-site.jpg");
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .clowd {
+            background-image: url("./img/clouds.png");
+            height: 500px;
+            background-attachment: scroll;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 2;
+        }
+
+    </style>
 
 </head>
 
@@ -39,9 +133,8 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="./first.html">First page</a>
-                                <a class="dropdown-item" href="./second.html">Second page</a>
-                                <a class="dropdown-item" href="./test.html">Third page</a>
+                                <a class="dropdown-item" href="./heaven.html">Store</a>
+                                <a class="dropdown-item" href="./login.html">Log-in</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="./old_page.html">Ma old page</a>
                             </div>
@@ -74,7 +167,6 @@
         </div>
 
 
-
     </header>
 
     <!--Main Layout-->
@@ -99,7 +191,7 @@
                 </div>
                 <div class="p-3 flex-1">
                     <h2 class="wow fadeInUp pb-3 font-weight-bold" data-wow-delay="0.3s">my pure love</h2>
-                    <img class="wow slideInUp" data-wow-delay="0.3s" src="./img/love.png" alt="love" width="180px">
+                    <img class="wow fadeIn" data-wow-delay="0.3s" src="./img/love.png" alt="love" width="180px">
                 </div>
                 <div class="p-3 flex-1">
                     <h2 class="wow fadeInUp pb-3 font-weight-bold" data-wow-delay="0.6s">+ a lil bit of bootstrap</h2>
@@ -113,26 +205,78 @@
             <div class="row">
                 <div class="col-md-12">
 
-                    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h5 align="justify">Thanks to that page you'll be able to see how combination of these 3 things can literally move mountains and bring aesthetic pleasure.</h5>
 
                 </div>
             </div>
-        </div>
-        <div class="container">
             <div class="row">
                 <div class="col-md-12">
-
-                    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+                    <h4 class="wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0.3s" align="center">Site is completely responsive by the way)</h4>
                 </div>
             </div>
         </div>
+
+        <div class="imac mt-4"></div>
+        <div class="ipad"></div>
+        <div class="iphone"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-
-                    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+                    <h3><br>Now think about something that humanity is missing for a long period of time</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="wow bounceInLeft col-md-12">
+                    <h5 align="justify" style="position: relative; left: 10%;">Flying cars</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="wow bounceInLeft col-md-12" data-wow-delay="0.3s">
+                    <h5 align="justify" style="position: relative; left: 20%;">Affordable water to the needy</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="wow bounceInLeft col-md-12" data-wow-delay="0.6s">
+                    <h5 align="justify" style="position: relative; left: 30%;">Maybe visiting Mars</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="wow bounceInLeft col-md-12" data-wow-delay="0.9s">
+                    <h5 align="justify" style="position: relative; left: 40%;">Or time travel machine</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="wow zoomIn col-md-12" data-wow-duration="2.5s">
+                    <img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Thinking_Face_Emoji.png?9898922749706957214" class="img-fluid" alt="hmm" width="10%">
+                </div>
+            </div>
+            <hr class="hr-dark my-4 w-75">
+            <div class="row">
+                <div class="wow zoomInUp font-weight-bold col-md-12" data-wow-delay="1.5s">
+                    <h2>Watch it now!</h2>
+                </div>
+            </div>
+            <hr class="hr-dark my-4 w-75">
+        </div>
+        <div class="clowd"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3> <br><br>Imagine world with <a href="./heaven.html"><strong>meme</strong></a> delivering service</h3>
+                    <h5 align="justify"><br> I think world was missing a lot this kind of stuff. There is food delivering, you can book hotel, order cars or even pay to guy who'll buy you clothes; but something like <a href="./heaven.html"><strong>meme delivering</strong></a> doesn't exist and that's the point <br> Idea is that I created a <a href="./heaven.html"><strong> site</strong></a> for that kind of favour </h5>
+                </div>
+            </div>
+            <a href="./heaven.html">
+                <div class="wow jackInTheBox row text-center" data-wow-delay="0.4s">
+                    <img src="./img/heaven.jpg" class="mx-auto d-block" alt="rai">
+                </div>
+            </a>
+            <div class="row">
+                <img src="./img/click.png" class="mx-auto img-fluid" style="position: relative; left: 20%;" alt="here">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="wow bounce" data-wow-delay="0.2s"><br>Hope you enjoyed</h5>
                 </div>
             </div>
         </div>
@@ -156,25 +300,25 @@
                     <!--Grid column-->
                     <!--Grid column-->
                     <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <!--Linkedin-->
+                        <a href="https://github.com/peBetrator" target="_blank" class="li-ic">
+                        <i class="fa fa-github white-text mr-lg-4"> </i>
+                    </a>
                         <!--Facebook-->
-                        <a class="fb-ic ml-0">
+                        <a href="https://www.facebook.com/maxnegal1337" target="_blank" class="fb-ic ml-0">
                         <i class="fa fa-facebook white-text mr-lg-4"> </i>
                     </a>
-                        <!--Twitter-->
-                        <a class="tw-ic">
-                        <i class="fa fa-twitter white-text mr-lg-4"> </i>
-                    </a>
                         <!--Google +-->
-                        <a class="gplus-ic">
+                        <a href="https://plus.google.com/discover" target="_blank" class="gplus-ic">
                         <i class="fa fa-google-plus white-text mr-lg-4"> </i>
                     </a>
-                        <!--Linkedin-->
-                        <a class="li-ic">
-                        <i class="fa fa-linkedin white-text mr-lg-4"> </i>
-                    </a>
                         <!--Instagram-->
-                        <a class="ins-ic">
+                        <a href="https://www.instagram.com/maxnegal1337" target="_blank" class="ins-ic">
                         <i class="fa fa-instagram white-text mr-lg-4"> </i>
+                    </a>
+                        <!--Twitter-->
+                        <a href="https://twitter.com" target="_blank" class="tw-ic">
+                        <i class="fa fa-twitter white-text mr-lg-4"> </i>
                     </a>
                     </div>
                     <!--Grid column-->
@@ -194,7 +338,7 @@
                         <strong>Max 1337</strong>
                     </h6>
                     <hr class="light-blue accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>That page was designed and created by me, Max Negal, for kind of indiviual work. Page gonna ramain as main for some period of time. Also you may contact me if you have any ideas or advices. Peace</p>
+                    <p>That page was designed and created by me, Max Negal, for a kind of indiviual work at university. Page gonna remain as main for some period of time. Also you may contact me if you have any ideas or advices. Peace</p>
                 </div>
                 <!--/.First column-->
 
@@ -253,8 +397,8 @@
     <!--/.Footer-->
 
 
-
     <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script>
         var overlay = document.getElementById("overlay");
         window.addEventListener('load', function() {
@@ -263,7 +407,6 @@
 
     </script>
     <script src="./js/wow.min.js"></script>
-    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
     <script>
         new WOW().init();
 
