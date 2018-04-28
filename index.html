@@ -15,6 +15,16 @@
     <link rel="shortcut icon" href="./favicon.ico">
     <link rel="stylesheet" href="./css/animate.css">
     <style>
+        .touchMeNot {
+            z-index: 3;
+            position: fixed;
+            left: 50px;
+            top: 100px;
+            background-image: url(./img/tenor.gif);
+            width: 200px;
+            height: 188px;
+        }
+
         #section05 a {
             padding-top: 70px;
         }
@@ -272,7 +282,7 @@
             <div class="row">
                 <div class="col-md-12">
 
-                    <h5 align="justify">Thanks to that page you'll be able to see how combination of these 3 things can literally move mountains and bring aesthetic pleasure.</h5>
+                    <h5 align="center">Thanks to that page you'll be able to see how combination of these 3 things can literally move mountains and bring aesthetic pleasure. <br>Also make sure you check every button(for example "Help" in footer), cause I tried hard)</h5>
 
                 </div>
             </div>
@@ -344,12 +354,13 @@
             <div class="row">
                 <div class="wow bounce col-md-12" data-wow-delay="0.2s">
                     <h5><br>Hope you enjoyed</h5>
-                    <a  href="#" class="scroll-link" data-id="top">Go up</a>
+                    <a href="#" class="scroll-link" data-id="top">Go up</a>
 
                 </div>
             </div>
         </div>
-
+        <div id="myDIV" class="touchMeNot" style="display: none;"></div>
+        
     </main>
     <!--Main Layout-->
 
@@ -431,8 +442,9 @@
                         <a href="#!">Shipping Rates</a>
                     </p>
                     <p>
-                        <a href="#!">Help</a>
+                        <a onclick="myFunction()">Help</a>
                     </p>
+
                 </div>
                 <!--/.Third column-->
 
@@ -469,6 +481,32 @@
     <!-- SCRIPTS -->
     <script type="text/javascript" src="./js/scrolldown.js"></script>
     <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+
+        $(document).ready(function() {
+            $('.touchMeNot').on('mouseenter', function(e) {
+                var maxX = $(window).width() - $(this).width();
+                var maxY = $(window).height() - $(this).height();
+                $(this).css({
+                    'left': getRandomInt(0, maxX),
+                    'top': getRandomInt(0, maxY)
+                });
+            });
+        });
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+
         var overlay = document.getElementById("overlay");
         window.addEventListener('load', function() {
             overlay.style.display = 'none';
