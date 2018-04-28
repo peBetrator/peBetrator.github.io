@@ -8,12 +8,69 @@
     <title>( ͡° ͜ʖ ͡°) ▪ lit</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="./css/mdb.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./favicon.ico">
     <link rel="stylesheet" href="./css/animate.css">
     <style>
+        #section05 a {
+            padding-top: 70px;
+        }
+
+        #section05 a span {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 24px;
+            height: 24px;
+            margin-left: -12px;
+            border-left: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-animation: sdb05 1.5s infinite;
+            animation: sdb05 1.5s infinite;
+            box-sizing: border-box;
+        }
+
+        @keyframes sdb05 {
+            0% {
+                transform: rotate(-45deg) translate(0, 0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: rotate(-45deg) translate(-20px, 20px);
+                opacity: 0;
+            }
+        }
+
+        .demo a {
+            bottom: 20px;
+            display: inline-block;
+            -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            color: #fff;
+            font: normal 100 10px/1 'Josefin Sans', sans-serif;
+            letter-spacing: .1em;
+            text-decoration: none;
+            transition: opacity .3s;
+        }
+
+        .demo a:hover {
+            opacity: .5;
+        }
+
+        .arrow {
+            position: absolute;
+            left: 49%;
+            bottom: 10px;
+        }
+
         .view {
             background-size: cover;
             background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -63,9 +120,11 @@
 
         @media (min-width: 768px) {
             .view {
+                width: 100%;
                 overflow: visible;
                 margin-top: -50px;
                 margin-bottom: -50px;
+
             }
         }
 
@@ -118,6 +177,8 @@
     </div>
     <!-- /LOADER -->
     <header>
+        <section id="top">
+        </section>
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
             <div class="container">
@@ -160,6 +221,10 @@
                             <hr class="hr-light my-4 w-75">
                             <h5 class="wow fadeInUp" data-wow-delay="0.5s">profesional pro</h5>
                             <br>
+                            <section id="section05" class="demo arrow">
+                                <center>
+                                    <h1></h1><a href="#" class="scroll-link" data-id="go"><span></span>Scroll Down</a></center>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -171,6 +236,8 @@
 
     <!--Main Layout-->
     <main class="text-center py-5 mt-3">
+        <section id="go">
+        </section>
 
         <div class="container">
             <div class="row">
@@ -211,7 +278,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h4 class="wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0.3s" align="center">Site is completely responsive by the way)</h4>
+                    <h4 class="wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0.3s" align="center">By the way page is completely responsive</h4>
                 </div>
             </div>
         </div>
@@ -275,8 +342,10 @@
                 <img src="./img/click.png" class="mx-auto img-fluid" style="position: relative; left: 20%;" alt="here">
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <h5 class="wow bounce" data-wow-delay="0.2s"><br>Hope you enjoyed</h5>
+                <div class="wow bounce col-md-12" data-wow-delay="0.2s">
+                    <h5><br>Hope you enjoyed</h5>
+                    <a  href="#" class="scroll-link" data-id="top">Go up</a>
+
                 </div>
             </div>
         </div>
@@ -398,7 +467,7 @@
 
 
     <!-- SCRIPTS -->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/scrolldown.js"></script>
     <script>
         var overlay = document.getElementById("overlay");
         window.addEventListener('load', function() {
